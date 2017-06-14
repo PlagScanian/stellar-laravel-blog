@@ -1,2 +1,2 @@
-# stellar-laravel-blog
-This Repository shows how to build up a simple Blog System in Laravel 5.4.
+# Stellar Simple Blog System in Laravel
+Welcome to this GitHub repo please read this welcome guide on the demo website: http://stellar-blog.gockel.co/welcome-to-this-simple-laravel-blog-demo
