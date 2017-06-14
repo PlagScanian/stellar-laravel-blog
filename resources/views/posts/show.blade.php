@@ -14,7 +14,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h2>@yield('title')</h2>
-        <p>{{ $post->created_at->format('M d,Y \a\t h:i a') }} By <a href="{{ url('/user/'.$post->user_id)}}">{{ $post->author->name }}</a></p>
+        <p>{{ $post->created_at->format('M d,Y \a\t h:i a') }} By <a href="{{ url('/user/'.$post->user_id . '/posts')}}">{{ $post->author->name }}</a></p>
       </div>
       <div class="panel-body">
         @if($post)

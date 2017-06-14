@@ -31,19 +31,4 @@ class CommentController extends Controller
 		Comments::create($input);
 		return redirect($slug)->with('message', 'Comment published');     
 	}
-
-	public function destroy(Request $request, $id)
-	{   
-		$comment = Comments::find($id);
-		// if($post && ($post->user_id == $request->user()->id || $request->user()->is_admin()))
-		// {
-		//   $post->delete();
-		//   $data['message'] = 'Post deleted Successfully';
-		// }
-		// else 
-		// {
-		//   $data['errors'] = 'Invalid Operation. You have not sufficient permissions';
-		// }
-		// return redirect('/')->with($data);
-	}
 }

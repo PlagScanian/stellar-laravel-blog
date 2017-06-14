@@ -30,8 +30,6 @@ Route::group(['middleware' => ['auth']], function()
 	 Route::get('delete/{id}','PostController@destroy');
 	 // add comment
 	 Route::post('comment/add','CommentController@store');
-	 // delete comment
-	 Route::post('comment/delete/{id}','CommentController@destroy');
 });
 // display list of posts
 Route::get('user/{id}/posts','UserController@user_posts_all')->where('id', '[0-9]+');
